@@ -138,5 +138,24 @@ font-family: 'Raleway', sans-serif;
 	width: 30%;
 	padding-bottom: 20px;
 	color: #141f1f;
-	
+}
+
+/*CSS for the local artists page*/
+#localartists img{
+	width: 300px;
+	float: left; /*removes white space*/
+	margin: 1.66%
+}
+
+#localartists p{
+	font-family: 'Raleway', sans-serif;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	border-bottom: 2px solid rgba(41,61,61,0.7);;
+	width: 30%;
+	padding-bottom: 20px;
+	color: #141f1f;
+}
+
 
