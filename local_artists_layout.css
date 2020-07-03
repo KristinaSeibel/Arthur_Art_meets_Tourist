@@ -27,13 +27,13 @@ to play with the appear and disappear on hover I use the opacity function,
   since the displace:none function is really glitchy
 */
 
-#trialhover{ /*the div with everything inside*/
+.hovercontainer{ /*the div with everything inside*/
   position:relative;
   width: 300px;
   height: 200px;
 }
 
-#trialhoverdescription{ /* this is the div with the description behind image*/
+.hoverdescription{ /* this is the div with the description behind image*/
   position:absolute; /* i am allowing for overflow between the description and the image*/
   width: 300px; /*the text description has to be the same size as the image to have good hover effect*/
   height: 200px; /*see above*/
@@ -41,16 +41,16 @@ to play with the appear and disappear on hover I use the opacity function,
   opacity:0; /* how much you see the text description behind the image*/
 }
 
-#trialhoverdescription:hover{ /*the description appears on hover*/
+.hoverdescription:hover{ /*the description appears on hover*/
   opacity:1;
   transition: opacity 0.6s linear;/*we can improve this transition*/;
 }
 
-#imageartistone:hover{
+.imageartist_1:hover{
   opacity:0.5;   /* display:none is really glitchy */
 }
 
-#trialhoverdescription:hover{
+.hoverdescription:hover{
   visibility: appear; /*the description appears on hover */
   display: block;
   background-color: hotpink;
@@ -58,9 +58,3 @@ to play with the appear and disappear on hover I use the opacity function,
   vertical-align: middle; /*this and the one after aligns vertically*/
   line-height: 200px;
 }
-
-
-/*
-
-transform: rotateY(180deg);
-*/
