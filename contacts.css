@@ -15,9 +15,11 @@
 
 /*position and hight of all images*/
 
-#contacts img{
+.picture {
  width: 300px;
+ float: left;
  height: 200px;
+ margin-top: 1.66%;
 }
 
 
@@ -27,16 +29,30 @@ to play with the appear and disappear on hover I use the opacity function,
   since the displace:none function is really glitchy
 */
 
-.picture{ /*the div with everything inside*/
-  position:relative;
+.picture { /*the div with everything inside*/
+  /*position:relative;
   width: 300px;
-  height: 200px;
+  height: 200px;*/
+width: 200px;
+ float: left;
+ margin: 1.66%;
+ height: 300px;
+}
+
+.imagecontact img{
+	width: 200px;
+	 margin: 1.66%;
+	 height: 300px;
+}
+.imagecontact img{ /*I dont understand why we need the img thing */
+	object-fit:cover;
+	overflow: hidden;
 }
 
 .hoverdescription{ /* this is the div with the description behind image*/
   position:absolute; /* i am allowing for overflow between the description and the image*/
-  width: 300px; /*the text description has to be the same size as the image to have good hover effect*/
-  height: 200px; /*see above*/
+  width: 200px; /*the text description has to be the same size as the image to have good hover effect*/
+  height: 300px; /*see above*/
   background-color: hotpink;
   opacity:0; /* how much you see the text description behind the image*/
 }
@@ -44,6 +60,10 @@ to play with the appear and disappear on hover I use the opacity function,
 .hoverdescription:hover{ /*the description appears on hover*/
   opacity:1;
   transition: opacity 0.6s linear;/*we can improve this transition*/;
+}
+
+.hoverdescription{
+	object-fit: contain;
 }
 
 .imageartist_1:hover{
@@ -56,5 +76,5 @@ to play with the appear and disappear on hover I use the opacity function,
   background-color: hotpink;
   text-align:center; /*this aligns horizontally*/
   vertical-align: middle; /*this and the one after aligns vertically*/
-  line-height: 200px;
+  line-height: 300px;
 }
