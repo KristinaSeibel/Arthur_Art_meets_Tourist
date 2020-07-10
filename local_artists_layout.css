@@ -15,8 +15,10 @@
 
 /*position and hight of all images*/
 
-#localartists img{
+.imageartist img {
  width: 300px;
+ float: left;
+ margin: 1.66%;
  height: 200px;
 }
 
@@ -28,9 +30,12 @@ to play with the appear and disappear on hover I use the opacity function,
 */
 
 .hovercontainer{ /*the div with everything inside*/
-  position:relative;
+ /* position:relative;
   width: 300px;
-  height: 200px;
+  height: 200px;*/
+  width: 300px;
+ float: left;
+ margin: 1.66%;
 }
 
 .hoverdescription{ /* this is the div with the description behind image*/
