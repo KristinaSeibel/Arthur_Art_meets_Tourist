@@ -5,23 +5,19 @@
   <link rel="stylesheet" type="text/css" href="gridStyles2ndtry.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@300&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
   <body id="grid">
   <div id="header">
       <h1>Arthur</h1>
-      <a href="#whatwedo">What we do</a>
-      <a href="#howitworks"> How it works</a>
-      <a href="local_artists.html">Local artists</a>
-      <a href="#so"> Our deal</a>
-      <a href="imageGallery.html">Gallery</a>
-      <a href="slidingGallery.html">Some Work</a>
-      <a href="contacts.html">Contacts</a>
-      <a href="login_Page.html">Login</a>
-      <span id="displayDate"></span>
-      <script>
-          var dt = new Date();
-          document.getElementById("displayDate").innerHTML = dt.toLocaleString();
-      </script>
+      <a href="#whatwedo" onclick='manageClicks("url")'>What we do</a>
+      <a href="#howitworks" onclick='manageClicks("url")'> How it works</a>
+      <a href="local_artists.html" onclick='manageClicks("url")'>Local artists</a>
+      <a href="#so" onclick='manageClicks("url")'> Our deal</a>
+      <a href="imageGallery.html" onclick='manageClicks("url")'>Gallery</a>
+      <a href="slidingGallery.html" onclick='manageClicks("url")'>Some Work</a>
+      <a href="contacts.html" onclick='manageClicks("url")'>Contacts</a>
+      <a href="login_Page.html" onclick='manageClicks("url")'>Login</a>
   </div>
 
   <div class="article">
@@ -73,6 +69,7 @@
         <p> If you are a tourist, you can finally bring back home a decent souvenir
         (maybe one that does not destroy the local economy) and support local artists.
        </p>
+
   </div>
 
   <!-- This is Mavis Login Box Code-->
@@ -80,9 +77,9 @@
    <div class="login-page">
     <div class="form">
         <form class="register-form">
-        <input type="text" placeholder="username"/>
-        <input type="text" placeholder="password"/>
-        <input type="text" placeholder="email id"/>
+        <input type="text" placeholder="username" id="username" />
+        <input type="text" placeholder="password" id="password" /> 
+        <input type="text" placeholder="email id" id="email" />
         <button>Create</button>
         <p class="message">Already Registered? <a href= "#">Login</a>
          </p>
@@ -109,5 +106,17 @@
   $('form').animate({height:  "toggle",  "opacity":  'toggle'}, "slow");
 });
   </script>
+
+<div id="footer">
+  <span id="displayDate"></span> 
+<script>
+  //date function
+          var dt = new Date();
+          // toLocalString = convert automatically to string
+          document.getElementById("displayDate").innerHTML = dt.toLocaleString();     
+</script>          
+</div>
+    
+  </div>
 </body>
 </html>

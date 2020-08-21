@@ -58,10 +58,11 @@ https://www.qhmit.com/css/grid/tutorial/;*/
 
 #grid > div:nth-child(10) {
   grid-column: span 4;
-  background: rgba(41,61,61,0.7);
-  color: white;
+  /*background: rgba(41,61,61,0.7);*/
+  color: red;
 
 }
+
 
 /*fixed header*/
 #header {
@@ -99,6 +100,8 @@ font-family: 'Raleway', sans-serif;
 
 #footer {
 	font-family: 'Raleway', sans-serif;
+  color: black;
+  font-weight: 800;
 }
 
 /*CSS for the login-box
