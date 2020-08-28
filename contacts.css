@@ -1,0 +1,85 @@
+/*I managed to make the hover effect but not to position the images in the grid*/
+
+/* the fonts*/
+#contacts p{
+	font-family: 'Raleway', sans-serif;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	border-bottom: 2px solid rgba(41,61,61,0.7);;
+	width: 30%;
+	padding-bottom: 20px;
+	color: #141f1f;
+}
+
+
+/*position and hight of all images*/
+
+.picture {
+ width: 300px;
+ float: left;
+ height: 200px;
+}
+
+
+/* Hover effect
+three divs matter: the image, the description and the two together
+to play with the appear and disappear on hover I use the opacity function,
+  since the displace:none function is really glitchy
+*/
+
+.picture { /*the div with everything inside*/
+  /*position:relative;
+  width: 300px;
+  height: 200px;*/
+width: 200px;
+ float: left;
+ margin: 1.66%;
+ height: 300px;
+}
+
+.imagecontact img{
+	width: 200px;
+	 margin: 1.66%;
+	 height: 300px;
+}
+.imagecontact img{ /*I dont understand why we need the img thing */
+	object-fit:cover;
+  object-position: 50% 50%;
+	overflow: hidden;
+}
+
+.hoverdescription{ /* this is the div with the description behind image*/
+  position:absolute; /* i am allowing for overflow between the description and the image*/
+  width: 200px; /*the text description has to be the same size as the image to have good hover effect*/
+  height: 300px; /*see above*/
+  background-color: hotpink;
+  opacity:0; /* how much you see the text description behind the image*/
+
+}
+
+.hoverdescription:hover{ /*the description appears on hover*/
+  opacity:1;
+  transition: opacity 0.6s linear;/*we can improve this transition*/;
+}
+
+.hoverdescription{
+	object-fit: contain;
+}
+
+.imageartist_1:hover{
+  opacity:0.5;   /* display:none is really glitchy */
+}
+
+.hoverdescription:hover{
+  visibility: appear; /*the description appears on hover */
+  display: block;
+  background-color: hotpink;
+  text-align:center; /*this aligns horizontally*/
+  /*vertical-align: middle; /*this and the one after aligns vertically*/
+  /*line-height: 300px;*/
+
+}
+.hoverdescriptionText{/*created another div around the text to seperate it and  to add padding*/
+  padding-top: 50%;
+  text-align:center; /*this aligns horizontally*/
