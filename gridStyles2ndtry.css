@@ -192,9 +192,17 @@ font-family: 'Raleway', sans-serif;
       display:  none;
   }
 
+  h1 {
+    text-align: center;
+  }
 
-
-
+#loginErrorMsgHolder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 
 /*CSS for the image Gallery*/
 #imgGallery img{

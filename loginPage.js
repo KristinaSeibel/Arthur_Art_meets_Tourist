@@ -27,3 +27,7 @@ function changeImg(){
 
 // Run function when page loads
 window.onload=changeImg;
+
+
+//store input from login-form in an array
+var input = document.getElementsByName('array[]');
